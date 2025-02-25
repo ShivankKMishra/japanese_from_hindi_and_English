@@ -34,14 +34,14 @@ export default function Home() {
           />
 
           {/* Ad Unit */}
-          <ins
-            className="adsbygoogle"
-            style={{ display: "block" }}
-            data-ad-client="ca-pub-9069261755673914"
-            data-ad-slot="7251546894"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-          ></ins>
+          <ins className="adsbygoogle"
+    style={{ display: 'block' }}
+    data-ad-client={process.env.NEXT_PUBLIC_AD_CLIENT}
+    data-ad-slot={process.env.NEXT_PUBLIC_AD_SLOT}
+    data-ad-format="auto"
+    data-full-width-responsive="true">
+</ins>
+
 
           {/* Initialize Ads */}
           <Script id="ads-init" strategy="afterInteractive">
