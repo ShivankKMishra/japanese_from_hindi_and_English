@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -19,12 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Google AdSense Script */}
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9069261755673914"
-          crossOrigin="anonymous"
-        />
+        {/* Google AdSense Meta Tag */}
+        <meta name="google-adsense-account" content="ca-pub-9069261755673914" />
       </head>
       <body className={inter.className}>
         <Analytics />
